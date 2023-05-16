@@ -53,7 +53,7 @@
 <div id="title-sect">
 <h1>BD mydb<br> Diccionario de Datos</h1>
 <p>
-<em>2023-06-13</em>
+<em>2023-05-29</em>
 </p>
 <p class="proj-desc">
 <em></em>
@@ -61,16 +61,371 @@
 </div>
 <h2>Índice</h2>
 <ul>
+<li><a href='#Actores_has_Aula'>Actores_has_Aula</a></li>
+<li><a href='#Actores_has_Tipo de documento'>Actores_has_Tipo de documento</a></li>
+<li><a href='#Alumno'>Alumno</a></li>
+<li><a href='#Asignatura'>Asignatura</a></li>
+<li><a href='#Aula'>Aula</a></li>
+<li><a href='#Aula_has_Asignatura'>Aula_has_Asignatura</a></li>
 <li><a href='#Caja'>Caja</a></li>
 <li><a href='#Cocinero'>Cocinero</a></li>
+<li><a href='#Curso'>Curso</a></li>
+<li><a href='#Detalle de Orden'>Detalle de Orden</a></li>
+<li><a href='#Mesa'>Mesa</a></li>
 <li><a href='#Mesero'>Mesero</a></li>
 <li><a href='#Orden'>Orden</a></li>
-<li><a href='#Orden_has_Productos'>Orden_has_Productos</a></li>
-<li><a href='#Productos'>Productos</a></li>
-<li><a href='#TipodeDocumento'>TipodeDocumento</a></li>
-<li><a href='#TipodeDocumento_has_usuario'>TipodeDocumento_has_usuario</a></li>
-<li><a href='#usuario'>usuario</a></li>
+<li><a href='#Plato'>Plato</a></li>
+<li><a href='#Profesor'>Profesor</a></li>
+<li><a href='#Tipo de documento'>Tipo de documento</a></li>
+<li><a href='#Tipo de documento'>Tipo de documento</a></li>
+<li><a href='#Tipo de documento_has_Usuario'>Tipo de documento_has_Usuario</a></li>
+<li><a href='#Tutor'>Tutor</a></li>
+<li><a href='#User'>User</a></li>
+<li><a href='#Usuario'>Usuario</a></li>
 </ul>
+<table id='Actores_has_Aula'>
+<caption>Actores_has_Aula</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>Actores_DNI</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Actores_Alumno_idAlumno</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Actores_Tutor_idTutor</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Actores_Profesor_idProfesor</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Aula_Codigo</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Actores_has_Tipo de documento'>
+<caption>Actores_has_Tipo de documento</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>Actores_DNI</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Actores_Alumno_idAlumno</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Actores_Tutor_idTutor</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Actores_Profesor_idProfesor</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Tipo de documento_Numero de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Alumno'>
+<caption>Alumno</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idAlumno</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Asignatura'>
+<caption>Asignatura</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>Codigo</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Nombre</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Horas impartidas de clase</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Aula'>
+<caption>Aula</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>Codigo</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Piso</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Numero de puestos</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Aula_has_Asignatura'>
+<caption>Aula_has_Asignatura</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>Aula_Codigo</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Asignatura_Codigo</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
 <table id='Caja'>
 <caption>Caja</caption>
 <tr><td colspan='11'></td></tr>
@@ -98,10 +453,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificador de Caja</td>
+    <td></td>
 </tr>
 <tr>
-    <td>usuario_idUsuario</td>
+    <td>Usuario_idUsuario</td>
     <td>INT</td>
     <td>&#10004;</td>
     <td>&#10004;</td>
@@ -111,7 +466,7 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion del Trabajador</td>
+    <td></td>
 </tr>
 <table id='Cocinero'>
 <caption>Cocinero</caption>
@@ -140,10 +495,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificador del Cocinero</td>
+    <td></td>
 </tr>
 <tr>
-    <td>usuario_idUsuario</td>
+    <td>Usuario_idUsuario</td>
     <td>INT</td>
     <td>&#10004;</td>
     <td>&#10004;</td>
@@ -153,7 +508,211 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion del Trabajador</td>
+    <td></td>
+</tr>
+<table id='Curso'>
+<caption>Curso</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>Codigo</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Nombre</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Detalle de Orden'>
+<caption>Detalle de Orden</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idDetalle de Orden</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Cantidad</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Orden_idOrden</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Plato_idPlato</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Mesa'>
+<caption>Mesa</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idMesa</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Estado(ocupada,disponible)</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Mesero_idMesero</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Mesero_Usuario_idUsuario</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Mesero_idMesero1</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Mesero_Usuario_idUsuario1</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
 </tr>
 <table id='Mesero'>
 <caption>Mesero</caption>
@@ -182,10 +741,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion del Mesero </td>
+    <td></td>
 </tr>
 <tr>
-    <td>usuario_idUsuario</td>
+    <td>Usuario_idUsuario</td>
     <td>INT</td>
     <td>&#10004;</td>
     <td>&#10004;</td>
@@ -195,7 +754,7 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion del Trabajador</td>
+    <td></td>
 </tr>
 <table id='Orden'>
 <caption>Orden</caption>
@@ -224,36 +783,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion de la Orden</td>
-</tr>
-<tr>
-    <td>Fecha</td>
-    <td>DATE</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>La fecha de la toma de la orden</td>
 </tr>
 <tr>
-    <td>Total</td>
-    <td>INT</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td class='attr'>&nbsp;</td>
-    <td></td>
-    <td>El valor total de la orden</td>
-</tr>
-<tr>
-    <td>Estado</td>
+    <td>Fecha y hora de inicio</td>
     <td>VARCHAR(45)</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -263,33 +796,33 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>El estado actual de la orden </td>
+    <td></td>
 </tr>
 <tr>
-    <td>Cocinero_idCocinero</td>
-    <td>INT</td>
+    <td>Fecha y hora de finailizacion</td>
+    <td>VARCHAR(45)</td>
     <td>&nbsp;</td>
-    <td>&#10004;</td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion del Cocinero</td>
+    <td></td>
 </tr>
 <tr>
-    <td>Caja_idCaja</td>
-    <td>INT</td>
+    <td>Total</td>
+    <td>VARCHAR(45)</td>
     <td>&nbsp;</td>
-    <td>&#10004;</td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion de Caja</td>
+    <td></td>
 </tr>
 <tr>
     <td>Mesero_idMesero</td>
@@ -302,10 +835,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion del Mesero</td>
+    <td></td>
 </tr>
 <tr>
-    <td>Mesero_usuario_idUsuario</td>
+    <td>Mesero_Usuario_idUsuario</td>
     <td>INT</td>
     <td>&nbsp;</td>
     <td>&#10004;</td>
@@ -315,10 +848,49 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion del Trabajador</td>
+    <td></td>
 </tr>
-<table id='Orden_has_Productos'>
-<caption>Orden_has_Productos</caption>
+<tr>
+    <td>Mesa_idMesa</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Mesa_Mesero_idMesero</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Mesa_Mesero_Usuario_idUsuario</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Plato'>
+<caption>Plato</caption>
 <tr><td colspan='11'></td></tr>
 <tr>
     <th>Columna</th>
@@ -334,7 +906,7 @@
     <th>Commentarios</th>
 </tr>
 <tr>
-    <td>Orden_idOrden</td>
+    <td>idPlato</td>
     <td>INT</td>
     <td>&#10004;</td>
     <td>&#10004;</td>
@@ -344,23 +916,49 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion de la orden</td>
+    <td></td>
 </tr>
 <tr>
-    <td>Productos_idProductos</td>
-    <td>INT</td>
-    <td>&#10004;</td>
-    <td>&#10004;</td>
+    <td>Nombre del plato</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion del Producto</td>
+    <td></td>
 </tr>
-<table id='Productos'>
-<caption>Productos</caption>
+<tr>
+    <td>Descripcion</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Precio</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Profesor'>
+<caption>Profesor</caption>
 <tr><td colspan='11'></td></tr>
 <tr>
     <th>Columna</th>
@@ -376,7 +974,7 @@
     <th>Commentarios</th>
 </tr>
 <tr>
-    <td>idProductos</td>
+    <td>idProfesor</td>
     <td>INT</td>
     <td>&#10004;</td>
     <td>&#10004;</td>
@@ -386,7 +984,191 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificador del producto</td>
+    <td></td>
+</tr>
+<table id='Tipo de documento'>
+<caption>Tipo de documento</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>Numero de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Tipo de documentocol</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Tipo de documento'>
+<caption>Tipo de documento</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>Numero de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Tipo de documento_has_Usuario'>
+<caption>Tipo de documento_has_Usuario</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>Tipo de documento_Numero de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Usuario_idUsuario</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Tutor'>
+<caption>Tutor</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idTutor</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Curso_Codigo</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='User'>
+<caption>User</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>DNI</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
 </tr>
 <tr>
     <td>Nombre</td>
@@ -399,23 +1181,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Noimbre del producto</td>
-</tr>
-<tr>
-    <td>Precio</td>
-    <td>INT</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>El precio del producto</td>
 </tr>
 <tr>
-    <td>Descripción</td>
+    <td>Apellido</td>
     <td>VARCHAR(45)</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -425,39 +1194,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>La descripcion del producto</td>
-</tr>
-<table id='TipodeDocumento'>
-<caption>TipodeDocumento</caption>
-<tr><td colspan='11'></td></tr>
-<tr>
-    <th>Columna</th>
-    <th>Tipo de dato</th>
-    <th><abbr title='Llave Primaria'>PK</abbr></th>
-    <th><abbr title='No Nulo'>NN</abbr></th>
-    <th><abbr title='Único'>UQ</abbr></th>
-    <th><abbr title='Binario'>BIN</abbr></th>
-    <th><abbr title='Unsigned'>UN</abbr></th>
-    <th><abbr title='Zero Fill'>ZF</abbr></th>
-    <th><abbr title='Auto Incremental'>AI</abbr></th>
-    <th>Default</th>
-    <th>Commentarios</th>
-</tr>
-<tr>
-    <td>idDocumento</td>
-    <td>INT</td>
-    <td>&#10004;</td>
-    <td>&#10004;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Ingresa el numero de documento</td>
 </tr>
 <tr>
-    <td>TipodeDocumento</td>
+    <td>Telefono</td>
     <td>VARCHAR(45)</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -467,27 +1207,23 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Ingresa el Tipo de documento
-</td>
-</tr>
-<table id='TipodeDocumento_has_usuario'>
-<caption>TipodeDocumento_has_usuario</caption>
-<tr><td colspan='11'></td></tr>
-<tr>
-    <th>Columna</th>
-    <th>Tipo de dato</th>
-    <th><abbr title='Llave Primaria'>PK</abbr></th>
-    <th><abbr title='No Nulo'>NN</abbr></th>
-    <th><abbr title='Único'>UQ</abbr></th>
-    <th><abbr title='Binario'>BIN</abbr></th>
-    <th><abbr title='Unsigned'>UN</abbr></th>
-    <th><abbr title='Zero Fill'>ZF</abbr></th>
-    <th><abbr title='Auto Incremental'>AI</abbr></th>
-    <th>Default</th>
-    <th>Commentarios</th>
+    <td></td>
 </tr>
 <tr>
-    <td>TipodeDocumento_idDocumento</td>
+    <td>Fecha de nacimiento</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Alumno_idAlumno</td>
     <td>INT</td>
     <td>&#10004;</td>
     <td>&#10004;</td>
@@ -497,10 +1233,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Numero de documento</td>
+    <td></td>
 </tr>
 <tr>
-    <td>usuario_idUsuario</td>
+    <td>Tutor_idTutor</td>
     <td>INT</td>
     <td>&#10004;</td>
     <td>&#10004;</td>
@@ -510,11 +1246,23 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificar el documento del Usuario
-</td>
+    <td></td>
 </tr>
-<table id='usuario'>
-<caption>usuario</caption>
+<tr>
+    <td>Profesor_idProfesor</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Usuario'>
+<caption>Usuario</caption>
 <tr><td colspan='11'></td></tr>
 <tr>
     <th>Columna</th>
@@ -540,10 +1288,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Identificacion del trabajador</td>
+    <td></td>
 </tr>
 <tr>
-    <td>Nombre</td>
+    <td>Nombre de usuario</td>
     <td>VARCHAR(45)</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -553,10 +1301,10 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Nombre del trabajador </td>
+    <td></td>
 </tr>
 <tr>
-    <td>Apellido</td>
+    <td>Contraseña</td>
     <td>VARCHAR(45)</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -566,11 +1314,11 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Apellido del trabajador</td>
+    <td></td>
 </tr>
 <tr>
-    <td>Numero telefonico</td>
-    <td>INT</td>
+    <td>Rol</td>
+    <td>VARCHAR(45)</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -579,7 +1327,7 @@
     <td>&nbsp;</td>
     <td class='attr'>&nbsp;</td>
     <td></td>
-    <td>Numero de telefono del trabajador</td>
+    <td></td>
 </tr>
 </table>
 </body>
