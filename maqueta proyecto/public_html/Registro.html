@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Orden Brivs">
+    <title>Orden Brivs</title>
+   
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+    <link rel="stylesheet" href="assets/css/foodhut.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Volver</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <header id="home" class="header">
+        <div class="overlay text-white text-center">
+            <h1 class="display-2 font-weight-bold my-3">La Pescadería</h1>
+            <h2 class="display-4 mb-5">¡Registrate!</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Correo electrónico">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+                            <p class="text-center mt-3">¿Ya tienes cuenta? <a href="Iniciou.html">Iniciar sesión</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        // JavaScript para mostrar el aviso de registro exitoso y redireccionar a control.html
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar que se envíe el formulario
+            alert('Registro exitoso'); // Mostrar aviso de registro exitoso
+            window.location.href = 'control.html'; // Redireccionar a control.html
+        });
+    </script>
+</body>
+</html>

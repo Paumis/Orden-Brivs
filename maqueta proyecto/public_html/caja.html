@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Orden Brivs">
+    <title>Orden Brivs</title>
+   
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+	<link rel="stylesheet" href="assets/css/foodhut.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand m-auto" href="#">
+                <img src="assets/imgs/logo.svg" class="brand-img" alt="">
+                <span class="brand-txt">La Pescadería</span>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Volver</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <header id="home" class="header">
+        <div class="overlay text-white text-center">
+            <h1 class="display-2 font-weight-bold my-3">La Pescadería</h1>
+            <h2 class="display-4 mb-5">Selección de Pedidos</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <form>
+                            <div class="form-group">
+                                <label for="numero-mesa-1">Número de Mesa 1:</label>
+                                <input type="text" class="form-control" id="numero-mesa-1" placeholder="Ingrese el número de mesa">
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion-compra-1">Descripción de la Compra 1:</label>
+                                <textarea class="form-control" id="descripcion-compra-1" rows="3" placeholder="Ingrese la descripción de la compra"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="precio-total-1">Precio Total 1:</label>
+                                <input type="text" class="form-control" id="precio-total-1" placeholder="Ingrese el precio total">
+                            </div>
+                            <button class="btn btn-lg btn-success" onclick="generarFactura(1)">Generar Factura</button>
+                        </form>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label for="numero-mesa-2">Número de Mesa 2:</label>
+                                <input type="text" class="form-control" id="numero-mesa-2" placeholder="Ingrese el número de mesa">
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion-compra-2">Descripción de la Compra 2:</label>
+                                <textarea class="form-control" id="descripcion-compra-2" rows="3" placeholder="Ingrese la descripción de la compra"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="precio-total-2">Precio Total 2:</label>
+                                <input type="text" class="form-control" id="precio-total-2" placeholder="Ingrese el precio total">
+                            </div>
+                            <button class="btn btn-lg btn-success" onclick="generarFactura(2)">Generar Factura</button>
+                        </form>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label for="numero-mesa-3">Número de Mesa 3:</label>
+                                <input type="text" class="form-control" id="numero-mesa-3" placeholder="Ingrese el número de mesa">
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion-compra-3">Descripción de la Compra 3:</label>
+                                <textarea class="form-control" id="descripcion-compra-3" rows="3" placeholder="Ingrese la descripción de la compra"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="precio-total-3">Precio Total 3:</label>
+                                <input type="text" class="form-control" id="precio-total-3" placeholder="Ingrese el precio total">
+                            </div>
+                            <button class="btn btn-lg btn-success" onclick="generarFactura(3)">Generar Factura</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function generarFactura(numeroMesa) {
+            var numeroMesaInput = document.getElementById("numero-mesa-" + numeroMesa).value;
+            var descripcionCompraInput = document.getElementById("descripcion-compra-" + numeroMesa).value;
+            var precioTotalInput = document.getElementById("precio-total-" + numeroMesa).value;
+
+            // Aquí puedes realizar la lógica para generar la factura con los datos ingresados
+
+            alert("Factura generada correctamente para la Mesa " + numeroMesa);
+        }
+    </script>
+</body>
+</html>

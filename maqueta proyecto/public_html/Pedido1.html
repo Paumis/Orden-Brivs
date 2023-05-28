@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Orden Brivs">
+    <title>Enviar Pedido</title>
+   
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+    <link rel="stylesheet" href="assets/css/foodhut.css">
+    
+    <style>
+        .order-container {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        
+        .order-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        
+        .order-container h4 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .order-container p {
+            margin-bottom: 10px;
+        }
+        
+        .order-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        
+        .order-container .quantity {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #0099ff;
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        .order-container .btn-back {
+            background-color: #ff0000;
+            border-color: #ff0000;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        
+        .order-container .btn-back:hover {
+            background-color: #cc0000;
+            border-color: #cc0000;
+        }
+        
+        .order-container .btn-add {
+            background-color: #0099ff;
+            border-color: #0099ff;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        
+        .order-container .btn-add:hover {
+            background-color: #0077cc;
+            border-color: #0077cc;
+        }
+        
+        .order-container .success-message {
+            background-color: #008000;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .order-container .timer {
+            font-weight: bold;
+            font-size: 18px;
+            display: none;
+        }
+        
+        .order-container .btn-edit {
+            background-color: #ffa500;
+            border-color: #ffa500;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        
+        .order-container .btn-edit:hover {
+            background-color: #cc8400;
+            border-color: #cc8400;
+        }
+        
+        .order-container .btn-cancel {
+            background-color: #ff0000;
+            border-color: #ff0000;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        
+        .order-container .btn-cancel:hover {
+            background-color: #cc0000;
+            border-color: #cc0000;
+        }
+        
+        .order-container .cancel-message {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="order-container">
+                    <img src="assets/imgs/blog-1.jpeg" alt="Platillo 1">
+                    <h4>Platillo 1</h4>
+                    <p>Descripción del platillo 1.</p>
+                    
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" placeholder="Escribe una descripción"></textarea>
+                    
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" min="1" max="10" value="1">
+                    
+                    <button class="btn btn-back" onclick="goBack()">Regresar</button>
+                    <button class="btn btn-add" onclick="addOrder()">Agregar Orden</button>
+                    <button class="btn btn-edit" onclick="editOrder()" style="display: none;">Editar Pedido</button>
+                    <button class="btn btn-cancel" onclick="cancelOrder()" style="display: none;">Cancelar Pedido</button>
+                    
+                    <div class="success-message">Orden agregada exitosamente</div>
+                    <div class="timer">Tiempo para cambiar la orden: <span id="countdown">5:00</span></div>
+                    <div class="cancel-message">Pedido cancelado exitosamente</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Regresar a la página mesero.html
+        function goBack() {
+            window.location.href = "mesero.html";
+        }
+        
+        // Agregar orden y mostrar mensaje de éxito
+        function addOrder() {
+            // Realizar lógica para agregar la orden
+            document.querySelector('.success-message').style.display = 'block';
+            
+            // Mostrar el botón de "Editar Pedido" y "Cancelar Pedido"
+            document.querySelector('.btn-edit').style.display = 'inline-block';
+            document.querySelector('.btn-cancel').style.display = 'inline-block';
+            
+            // Iniciar el cronómetro de 5 minutos
+            startTimer(5, 0);
+        }
+        
+        // Editar pedido
+        function editOrder() {
+            // Mostrar aviso de volver a seleccionar o dar una descripción del pedido
+            alert("Vuelve a seleccionar o vuelve a dar una descripción del pedido");
+            
+            // Reiniciar el cronómetro a 5 minutos
+            startTimer(5, 0);
+        }
+        
+        // Cancelar pedido
+        function cancelOrder() {
+            // Realizar lógica para cancelar el pedido
+            
+            // Ocultar el botón de "Editar Pedido" y "Cancelar Pedido"
+            document.querySelector('.btn-edit').style.display = 'none';
+            document.querySelector('.btn-cancel').style.display = 'none';
+            
+            // Mostrar el mensaje de cancelación
+            document.querySelector('.cancel-message').style.display = 'block';
+        }
+        
+        // Cronómetro
+        function startTimer(minutes, seconds) {
+            var countdown = document.getElementById("countdown");
+            var totalSeconds = minutes * 60 + seconds;
+            
+            var timer = setInterval(function() {
+                minutes = Math.floor(totalSeconds / 60);
+                seconds = totalSeconds % 60;
+                
+                countdown.innerHTML = minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0');
+                
+                if (totalSeconds <= 0) {
+                    clearInterval(timer);
+                } else {
+                    totalSeconds--;
+                }
+            }, 1000);
+            
+            document.querySelector('.timer').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
