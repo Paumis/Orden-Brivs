@@ -1,4 +1,4 @@
--- nose
+-- cambios pertinentes 
 
 
 SELECT 
